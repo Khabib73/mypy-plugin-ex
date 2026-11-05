@@ -1,0 +1,5 @@
+- case: using_simple_plugin
+  main: |
+    from mylib import make_list
+
+    reveal_type(make_list(42)) # N: Revealed type is "list[int]"
